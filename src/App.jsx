@@ -24,14 +24,14 @@ function App() {
     setView('home');
   };
 
-  const goHome = () => {
-    setView('home');
-  };
-
   const handleLogout = () => {
     setUser(null);
     setRole(null);
     setView('login');
+  };
+
+  const goHome = () => {
+    setView('home');
   };
 
   const renderView = () => {
@@ -41,7 +41,15 @@ function App() {
       case 'inicio':
         return <Inicio user={user} onSelectRole={handleRoleSelect} />;
       case 'home':
-        return <Home role={role} setView={setView} />;
+        return (
+          <Home
+            role={role}
+            setView={setView}
+            user={user}
+            goHome={goHome}
+            logout={handleLogout}
+          />
+        );
       case 'vista2':
         return <Vista2 user={user} goHome={goHome} logout={handleLogout} />;
       case 'vista4':
