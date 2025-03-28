@@ -16,7 +16,7 @@ const Login = ({ onLogin }) => {
     <>
       {/* Fondo blanco y negro difuminado */}
       <div style={{
-        backgroundImage: "url('./src/assets/torrehuergo.jpg')",
+           backgroundImage: "url('/torrehuergo.jpg')",    
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         filter: 'grayscale(100%) blur(4px)',

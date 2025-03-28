@@ -9,7 +9,7 @@ const Inicio = ({ user, onSelectRole }) => {
 
       {/* Fondo blanco y negro con textos en fila */}
       <div style={{
-        backgroundImage: "url('./src/assets/torrehuergo.jpg')",
+        backgroundImage: "url('/torrehuergo.jpg')",        
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         filter: 'grayscale(100%)',
